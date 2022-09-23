@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #ffff;
+}
+
+/* wrappers */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.control-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.main-wrapper .add-task-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* field to enter task name/title */
+
+#task-title {
+    height: 20px;
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-right: 5px;
+}
+
+/* button to create task */
+
+#task-creation {
+    height: 34px;
+    width: 80px;
+    border-radius: 5px;
+    border: 2px solid rgb(105, 197, 255);
+    background-color: rgb(227, 248, 255);
+    color: rgb(105, 197, 255);
+    font-size: 10pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* task div */
+
+#task-wrapper {
+    height: auto;
+    width: 250px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#task-wrapper .task-box {
+    background-color: rgb(227, 248, 255);
+    width: 100%;
+    height: 22px;
+    padding: 2px 2px 2px 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#task-wrapper input[type=checkbox] {
+    margin: 0;
+    margin-right: 2px;
+    margin-left: 2px;
+    height: 16px;
+    width: 16px;
+}
+
+#task-wrapper input[type=checkbox]:checked + span{
+    color: rgb(179, 179, 179);
+    text-decoration: line-through;
+}
+
+#task-wrapper span {
+    height: 100%;
+    width: 85%;
+    margin: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-right: 0;
+    font-size: 16px;
+}
+
+/* deletion button: not activated yet*/
+
+#task-deletion {
+    height: 16px;
+    width: 16px;
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    border: none;
+    background-color: rgb(227, 248, 255);
+}
+

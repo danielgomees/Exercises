@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Items</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 400px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Row (Default)</h1>
+    
+    <h2>Center (Row)</h2>
+
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">specimen book. It has survived not only five centuries</div>
+        <div class="item">Item 3 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    </section>
+
+    <h2>Stretch (Row)</h2>
+
+    <section class="container stretch">
+        <div class="item">Item 1</div>
+        <div class="item">specimen book. It has survived not only five centuries</div>
+        <div class="item">Item 3 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    </section>
+    
+    <h2>Flex Start (Row)</h2>
+
+    <section class="container flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">specimen book. It has survived not only five centuries</div>
+        <div class="item">Item 3 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    </section>
+
+    <h2>Flex End (Row)</h2>
+
+    <section class="container flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">specimen book. It has survived not only five centuries</div>
+        <div class="item">Item 3 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    </section>
+
+    <h2>Baseline (Row)</h2>
+
+    <section class="container baseline">
+        <div class="item">Item 1</div>
+        <div class="item">specimen book. It has survived not only five centuries</div>
+        <div class="item">Item 3 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    </section>
+
+    <h1>Column</h1>
+    
+    <h2>Center (Column)</h2>
+
+    <section class="container center column">
+        <div class="item">Item 1</div>
+        <div class="item">specimen book. It has survived not only five centuries</div>
+        <div class="item">Item 3 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    </section>
+
+    <h2>Stretch (Column)</h2>
+
+    <section class="container stretch column">
+        <div class="item">Item 1</div>
+        <div class="item">specimen book. It has survived not only five centuries</div>
+        <div class="item">Item 3 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    </section>
+    
+    <h2>Flex Start (Column)</h2>
+
+    <section class="container flex-start column">
+        <div class="item">Item 1</div>
+        <div class="item">specimen book. It has survived not only five centuries</div>
+        <div class="item">Item 3 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    </section>
+
+    <h2>Flex End (Column)</h2>
+
+    <section class="container flex-end column">
+        <div class="item">Item 1</div>
+        <div class="item">specimen book. It has survived not only five centuries</div>
+        <div class="item">Item 3 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    </section>
+
+    <h2>Baseline (Column)</h2>
+
+    <section class="container baseline column">
+        <div class="item">Item 1</div>
+        <div class="item">specimen book. It has survived not only five centuries</div>
+        <div class="item">Item 3 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+    </section>
+
+    <h2>Alinhamento central à tela (Column)</h2>
+    
+    <sectiion class="container central center">
+        <div class="item">It is a long established fact that a reader will be distracted by the readable content of a</div>
+    </sectiion>
+    
+</body>
+</html>

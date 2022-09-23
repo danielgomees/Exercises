@@ -1,0 +1,12 @@
+var title = document.getElementById("task-title").document;
+const TASK_CREATOR = document.getElementById("task-creation");
+const TASK_REMOVAL = document.getElementById("task-deletion");
+var div = 
+`
+<div class="task-box">         
+    <input type="checkbox">
+    <span>${title}</span>
+    <button id="task-deletion"></button>
+</div>
+`;
+
